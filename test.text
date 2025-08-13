@@ -1,0 +1,4 @@
+'href="https//www.google.com" target="_blank" ' !=
+'href="https://www.google.com" target="_blank" '
+
+id="text" method="GET" href="http://127.0.0.1/get-it" alt = "woow some cool stuff is here"
