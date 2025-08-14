@@ -23,3 +23,8 @@ TextNode(second image, image, https://i.imgur.com/3elNhQu.png)]
 TextNode(image, image, https://i.imgur.com/zjjcJKZ.png),
 TextNode( and another, text),
 TextNode(second image, image, https://i.imgur.com/3elNhQu.png)]
+
+[TextNode(This is , text, None), TextNode(text, bold, None),
+TextNode( with an , text, None), TextNode(italic, italic, None),
+TextNode( word and a , text, None), TextNode(code block, code, None),
+TextNode( and an ![obi wan image](https://i.imgur.com/fJRm4Vk.jpeg) and a [link](https://boot.dev), text, None)]

@@ -1,39 +1,31 @@
 from textnode import TextType, TextNode
 import re
 
-def split_nodes_delimiter(old_nodes: list, delimiter, text_type):
-    new_nodes = []
-    current_text = ""
-    delimiter_found = False
-    for node in old_nodes:
-        if node.text_type != TextType.TEXT:
-            new_nodes.append(node)
-            continue
-        split = node.text.split(" ")
-        for string in split:
-            if delimiter in string:
-                if current_text and delimiter_found == False and delimiter not in current_text:
-                    new_nodes.append(TextNode(current_text, node.text_type))
-                    current_text = " "
+def text_to_textnodes(text):
+    return split_nodes_link(split_nodes_image
+                            (split_nodes_delimiter
+                             (split_nodes_delimiter
+                              (split_nodes_delimiter
+                               ([TextNode(text, TextType.TEXT)], "**", TextType.BOLD), "_", TextType.ITALIC), "`", TextType.CODE)))
 
-                if delimiter in string.lstrip(delimiter) and delimiter in string.rstrip(delimiter):
-                    clean = string.replace(delimiter, "")
-                    new_nodes.append(TextNode(clean, text_type))
-                    current_text = " "
-                elif delimiter_found:
-                    current_text += string.rstrip(delimiter)
-                    new_nodes.append(TextNode(current_text, text_type))
-                    current_text = " "
-                    delimiter_found = False
-                else:
-                    current_text = string.lstrip(delimiter) + " "
-                    delimiter_found = True
+def split_nodes_delimiter(old_nodes, delimiter, text_type):
+    new_nodes = []
+    for old_node in old_nodes:
+        if old_node.text_type != TextType.TEXT:
+            new_nodes.append(old_node)
+            continue
+        split_nodes = []
+        sections = old_node.text.split(delimiter)
+        if len(sections) % 2 == 0:
+            raise ValueError("invalid markdown, formatted section not closed")
+        for i in range(len(sections)):
+            if sections[i] == "":
+                continue
+            if i % 2 == 0:
+                split_nodes.append(TextNode(sections[i], TextType.TEXT))
             else:
-                current_text += string + " "
-        if delimiter_found:
-            raise ValueError("invalid Markdown syntax at the delimiter")
-        if current_text[:-1]:
-            new_nodes.append(TextNode(current_text[:-1], node.text_type))
+                split_nodes.append(TextNode(sections[i], text_type))
+        new_nodes.extend(split_nodes)
     return new_nodes
 
 def extract_markdown_images(text):
@@ -63,6 +55,9 @@ def split_nodes_helper(old_nodes, image:bool):
             extracted_markdown = extract_markdown_images(original_text)
         else:
             extracted_markdown = extract_markdown_links(original_text)
+        if not extracted_markdown:
+            new_nodes.append(node)
+            continue
         while i <= len(extracted_markdown) - 1:
             image_alt = extracted_markdown[i][0]
             image_link = extracted_markdown[i][1]
@@ -76,6 +71,8 @@ def split_nodes_helper(old_nodes, image:bool):
             new_nodes.append(TextNode(image_alt, text_type, image_link))
             original_text = sections.pop()
             i += 1
+        if original_text:
+            new_nodes.append(TextNode(original_text, TextType.TEXT))
     if new_nodes:
         return new_nodes
     return old_nodes

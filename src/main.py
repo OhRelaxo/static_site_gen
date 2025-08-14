@@ -1,12 +1,11 @@
-from textnode import TextNode, TextType
-from inline_markdown import split_nodes_image
+from block_markdown import markdown_to_blocks
 
 def main():
-    node = TextNode(
-        "This is text with an ![image](https://i.imgur.com/zjjcJKZ.png) and another ![second image](https://i.imgur.com/3elNhQu.png)",
-        TextType.TEXT,
-    )
-    new_nodes = split_nodes_image([node])
-    print(new_nodes)
+    print(markdown_to_blocks("""# This is a heading
 
+This is a paragraph of text. It has some **bold** and _italic_ words inside of it.
+
+- This is the first list item in a list block
+- This is a list item
+- This is another list item"""))
 main()
