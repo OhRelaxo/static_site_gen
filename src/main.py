@@ -9,5 +9,12 @@ This is still just a paragraph of text.
 - This is the first list item in a list block
 - This is a list item
 - This is another list item""")
-    print(block_to_block_type(text_blocks[1]))
+
+    text_block = markdown_to_blocks("""
+        - This is the first list item in a list block
+        - This is a list item
+        - This is another list item
+        """)
+    print(text_block)
+    print(block_to_block_type(text_block[0]))
 main()
