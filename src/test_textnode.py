@@ -1,6 +1,6 @@
 import unittest
 
-from textnode import TextNode, TextType, text_node_to_html_node, split_nodes_delimiter
+from textnode import TextNode, TextType, text_node_to_html_node
 
 
 class TestTextNode(unittest.TestCase):
@@ -67,28 +67,6 @@ class TestTextNode(unittest.TestCase):
         self.assertEqual(html_node.value, "")
         self.assertEqual(type(html_node.value), str)
         self.assertEqual(html_node.props, {"src": "some image", "alt": "This is an image node"})
-
-    def test_split_bold(self):
-        node = TextNode("This is **bold** text *is", TextType.TEXT)
-        new_node = split_nodes_delimiter([node], "**", TextType.BOLD)
-        self.assertEqual(new_node, [TextNode("This is ", TextType.TEXT),
-                                    TextNode("bold", TextType.BOLD), TextNode(" text *is", TextType.TEXT)])
-
-    def test_split_code(self):
-        node = TextNode("This is `code`", TextType.TEXT)
-        new_node = split_nodes_delimiter([node], "`", TextType.CODE)
-        self.assertEqual(new_node, [TextNode("This is ", TextType.TEXT), TextNode("code", TextType.CODE)])
-
-    def test_split_italic(self):
-        node = TextNode("This is _italic_ text ** **  ? ! ` ` ", TextType.TEXT)
-        new_node = split_nodes_delimiter([node], "_", TextType.ITALIC)
-        self.assertEqual(new_node, [TextNode("This is ", TextType.TEXT), TextNode("italic", TextType.ITALIC),
-                                    TextNode(" text ** **  ? ! ` ` ", TextType.TEXT)])
-
-    def test_split_bad(self):
-        node = TextNode("This is **bad text", TextType.TEXT)
-        with self.assertRaises(Exception):
-            new_node = split_nodes_delimiter([node], "**", TextType.BOLD)
 
 
 if __name__ == "__main__":
