@@ -17,51 +17,27 @@ def markdown_to_blocks(markdown):
         clean_markdown.append(text.strip())
     return clean_markdown
 
-def block_to_block_type(markdown_block: str):
-    if not markdown_block:
-        return None
-    block_list = markdown_block.split(" ")
-    first_chars = block_list[0]
-    last_chars = block_list[-1]
-    if "#" in first_chars:
+def block_to_block_type(block):
+    lines = block.split("\n")
+    if block.startswith(("# ", "## ", "### ", "#### ", "##### ", "###### ")):
         return BlockType.HEADING
-    if "```" in first_chars and "```" in last_chars:
+    if len(lines) > 1 and lines[0].startswith("```") and lines[-1].startswith("```"):
         return BlockType.CODE
-    count = 0
-    count_type = 0
-    last_type = None
-    block_list = markdown_block.split("\n")
-    for line in block_list:
-        char = line.split(" ")
-        if "-" in char[0]:
-            if last_type is None or last_type == BlockType.UNORDERED_LIST:
-                last_type = BlockType.UNORDERED_LIST
-                count_type += 1
-            else:
+    if block.startswith(">"):
+        for line in lines:
+            if not line.startswith(">"):
                 return BlockType.PARAGRAPH
-
-        if ">" in char[0]:
-            if last_type is None or last_type == BlockType.QUOTE:
-                last_type = BlockType.QUOTE
-                count_type += 1
-            else:
+        return BlockType.QUOTE
+    if block.startswith("- "):
+        for line in lines:
+            if not line.startswith("- "):
                 return BlockType.PARAGRAPH
-
-        if "." in char[0]:
-            if last_type is None or last_type == BlockType.ORDERED_LIST:
-                last_type = BlockType.ORDERED_LIST
-                count_type += 1
-                number = char[0].strip(".")
-                if not number.isdigit():
-                    return BlockType.PARAGRAPH
-                if count + 1 == int(number):
-                    count = int(number)
-                else:
-                    return BlockType.PARAGRAPH
-            else:
+        return BlockType.UNORDERED_LIST
+    if block.startswith("1. "):
+        i = 1
+        for line in lines:
+            if not line.startswith(f"{i}. "):
                 return BlockType.PARAGRAPH
-
-    if count_type == len(block_list):
-        return last_type
-    else:
-        return BlockType.PARAGRAPH
+            i += 1
+        return BlockType.ORDERED_LIST
+    return BlockType.PARAGRAPH
