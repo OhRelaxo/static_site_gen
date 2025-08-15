@@ -54,12 +54,10 @@ def block_to_block_type(markdown_block: str):
                 number = char[0].strip(".")
                 if type(number) is not int:
                     return BlockType.PARAGRAPH
-                    #raise ValueError("ordered list needs a number")
                 if count + 1 == number:
                     count = number
                 else:
                     return BlockType.PARAGRAPH
-                    #raise ValueError("ordered list needs to be properly ordered")
             else:
                 return BlockType.PARAGRAPH
 
