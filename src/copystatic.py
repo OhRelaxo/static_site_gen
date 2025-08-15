@@ -11,7 +11,7 @@ logging.basicConfig(
 
 def copy_content():
     working_dir = os.getcwd()
-    public_dir = os.path.join(working_dir, "public")
+    public_dir = os.path.join(working_dir, "docs")
     if os.path.exists(public_dir):
         shutil.rmtree(public_dir)
         logging.info(f"deleted directory: {public_dir}")

@@ -636,3 +636,72 @@
 2025-08-15 09:07:44 - copied: /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/static/images to /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/public/images
 2025-08-15 09:07:44 - copied: /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/static/images to /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/public/images
 2025-08-15 09:07:44 - copy process was successful
+2025-08-15 09:23:02 - deleted directory: /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/public
+2025-08-15 09:23:02 - created directory: /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/public
+2025-08-15 09:23:02 - starting with copy process:
+2025-08-15 09:23:02 - copied: /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/static to /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/public
+2025-08-15 09:23:02 - created directory: /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/public/images
+2025-08-15 09:23:02 - copied: /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/static/images to /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/public/images
+2025-08-15 09:23:02 - copied: /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/static/images to /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/public/images
+2025-08-15 09:23:02 - copied: /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/static/images to /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/public/images
+2025-08-15 09:23:02 - copied: /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/static/images to /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/public/images
+2025-08-15 09:23:02 - copy process was successful
+2025-08-15 09:24:44 - deleted directory: /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/public
+2025-08-15 09:24:44 - created directory: /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/public
+2025-08-15 09:24:44 - starting with copy process:
+2025-08-15 09:24:44 - copied: /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/static to /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/public
+2025-08-15 09:24:44 - created directory: /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/public/images
+2025-08-15 09:24:44 - copied: /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/static/images to /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/public/images
+2025-08-15 09:24:44 - copied: /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/static/images to /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/public/images
+2025-08-15 09:24:44 - copied: /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/static/images to /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/public/images
+2025-08-15 09:24:44 - copied: /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/static/images to /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/public/images
+2025-08-15 09:24:44 - copy process was successful
+2025-08-15 09:25:30 - deleted directory: /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/public
+2025-08-15 09:25:30 - created directory: /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/public
+2025-08-15 09:25:30 - starting with copy process:
+2025-08-15 09:25:30 - copied: /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/static to /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/public
+2025-08-15 09:25:30 - created directory: /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/public/images
+2025-08-15 09:25:30 - copied: /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/static/images to /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/public/images
+2025-08-15 09:25:30 - copied: /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/static/images to /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/public/images
+2025-08-15 09:25:30 - copied: /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/static/images to /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/public/images
+2025-08-15 09:25:30 - copied: /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/static/images to /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/public/images
+2025-08-15 09:25:30 - copy process was successful
+2025-08-15 09:26:11 - deleted directory: /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/public
+2025-08-15 09:26:11 - created directory: /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/public
+2025-08-15 09:26:11 - starting with copy process:
+2025-08-15 09:26:11 - copied: /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/static to /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/public
+2025-08-15 09:26:11 - created directory: /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/public/images
+2025-08-15 09:26:11 - copied: /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/static/images to /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/public/images
+2025-08-15 09:26:11 - copied: /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/static/images to /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/public/images
+2025-08-15 09:26:11 - copied: /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/static/images to /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/public/images
+2025-08-15 09:26:11 - copied: /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/static/images to /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/public/images
+2025-08-15 09:26:11 - copy process was successful
+2025-08-15 09:29:04 - deleted directory: /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/public
+2025-08-15 09:29:04 - created directory: /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/public
+2025-08-15 09:29:04 - starting with copy process:
+2025-08-15 09:29:04 - copied: /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/static to /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/public
+2025-08-15 09:29:04 - created directory: /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/public/images
+2025-08-15 09:29:04 - copied: /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/static/images to /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/public/images
+2025-08-15 09:29:04 - copied: /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/static/images to /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/public/images
+2025-08-15 09:29:04 - copied: /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/static/images to /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/public/images
+2025-08-15 09:29:04 - copied: /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/static/images to /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/public/images
+2025-08-15 09:29:04 - copy process was successful
+2025-08-15 09:29:18 - deleted directory: /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/public
+2025-08-15 09:29:18 - created directory: /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/public
+2025-08-15 09:29:18 - starting with copy process:
+2025-08-15 09:29:18 - copied: /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/static to /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/public
+2025-08-15 09:29:18 - created directory: /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/public/images
+2025-08-15 09:29:18 - copied: /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/static/images to /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/public/images
+2025-08-15 09:29:18 - copied: /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/static/images to /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/public/images
+2025-08-15 09:29:18 - copied: /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/static/images to /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/public/images
+2025-08-15 09:29:18 - copied: /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/static/images to /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/public/images
+2025-08-15 09:29:18 - copy process was successful
+2025-08-15 09:31:52 - created directory: /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/docs
+2025-08-15 09:31:52 - starting with copy process:
+2025-08-15 09:31:52 - copied: /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/static to /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/docs
+2025-08-15 09:31:52 - created directory: /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/docs/images
+2025-08-15 09:31:52 - copied: /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/static/images to /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/docs/images
+2025-08-15 09:31:52 - copied: /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/static/images to /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/docs/images
+2025-08-15 09:31:52 - copied: /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/static/images to /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/docs/images
+2025-08-15 09:31:52 - copied: /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/static/images to /var/home/marcel/Dev/github/ohrelaxo/static_site_gen/docs/images
+2025-08-15 09:31:52 - copy process was successful
