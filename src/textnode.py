@@ -27,14 +27,7 @@ class TextNode:
     def __repr__(self):
         return f"TextNode({self.text}, {self.text_type.value}, {self.url})"
 
-def text_node_to_html_node(text_node: TextNode, block_type: BlockType = None):
-    if block_type:
-        match block_type:
-            case BlockType.ORDERED_LIST:
-                return LeafNode("li", text_node.text)
-            case BlockType.UNORDERED_LIST:
-                return LeafNode("li", text_node.text)
-
+def text_node_to_html_node(text_node: TextNode):
     match text_node.text_type:
         case TextType.TEXT:
             return LeafNode(None, text_node.text)

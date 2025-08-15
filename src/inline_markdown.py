@@ -2,11 +2,13 @@ from textnode import TextType, TextNode
 import re
 
 def text_to_textnodes(text):
-    return split_nodes_link(split_nodes_image
-                            (split_nodes_delimiter
-                             (split_nodes_delimiter
-                              (split_nodes_delimiter
-                               ([TextNode(text, TextType.TEXT)], "**", TextType.BOLD), "_", TextType.ITALIC), "`", TextType.CODE)))
+    nodes = [TextNode(text, TextType.TEXT)]
+    nodes = split_nodes_delimiter(nodes, "**", TextType.BOLD)
+    nodes = split_nodes_delimiter(nodes, "_", TextType.ITALIC)
+    nodes = split_nodes_delimiter(nodes, "`", TextType.CODE)
+    nodes = split_nodes_image(nodes)
+    nodes = split_nodes_link(nodes)
+    return nodes
 
 def split_nodes_delimiter(old_nodes, delimiter, text_type):
     new_nodes = []
@@ -29,10 +31,10 @@ def split_nodes_delimiter(old_nodes, delimiter, text_type):
     return new_nodes
 
 def extract_markdown_images(text):
-    return re.findall(r"!\[(.*?)]\((.*?)\)", text)
+    return re.findall(r"!\[([^\[\]]*)\]\(([^\(\)]*)\)", text)
 
 def extract_markdown_links(text):
-    return re.findall(r"\[(.*?)]\((.*?)\)", text)
+    return re.findall(r"(?<!!)\[([^\[\]]*)\]\(([^\(\)]*)\)", text)
 
 def split_nodes_image(old_nodes):
     return split_nodes_helper(old_nodes, True)
@@ -76,3 +78,10 @@ def split_nodes_helper(old_nodes, image:bool):
     if new_nodes:
         return new_nodes
     return old_nodes
+
+def extract_title(markdown):
+    header = markdown.split("\n", 1)
+    header = header[0].split(" ", 1)
+    if header[0] == "#":
+        return header[1]
+    raise ValueError("wrong header")

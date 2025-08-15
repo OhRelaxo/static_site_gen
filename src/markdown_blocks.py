@@ -52,10 +52,10 @@ def block_to_block_type(markdown_block: str):
                 last_type = BlockType.ORDERED_LIST
                 count_type += 1
                 number = char[0].strip(".")
-                if type(number) is not int:
+                if not number.isdigit():
                     return BlockType.PARAGRAPH
-                if count + 1 == number:
-                    count = number
+                if count + 1 == int(number):
+                    count = int(number)
                 else:
                     return BlockType.PARAGRAPH
             else:
