@@ -31,7 +31,7 @@ class LeafNode(HTMLNode):
             if self.tag:
                 return f"<{self.tag}{self.props_to_html()}>{self.value}</{self.tag}>"
             return self.value
-        if self.tag == "img":
+        if self.tag == "img" or self.tag == "br" or self.tag == "hr":
             return f"<{self.tag}{self.props_to_html()}>"
         raise ValueError("invalid HTML: no value")
 
