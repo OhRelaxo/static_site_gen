@@ -14,7 +14,7 @@ class HTMLNode:
         to_html = f""
         if self.props:
             for key, value in self.props.items():
-                to_html += f"""{key}="{value}" """
+                to_html += f""" {key}="{value}" """
         return to_html
 
     def __repr__(self):
@@ -29,7 +29,7 @@ class LeafNode(HTMLNode):
     def to_html(self):
         if self.value:
             if self.tag:
-                return f"<{self.tag}>{self.value}</{self.tag}>"
+                return f"<{self.tag}{self.props_to_html()}>{self.value}</{self.tag}>"
             return self.value
         raise ValueError("invalid HTML: no value")
 
