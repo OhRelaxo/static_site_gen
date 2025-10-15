@@ -41,18 +41,6 @@ func main(){
 }
 ```
 
-$eingabe = Read-Host "Bitte gib eine Zahl von 0-6 ein"
-
-Function DayofWeek ($day) {
-    if (!($day -match "^[0-6]$")) {
-        return "unknown"
-    }
-    $days = @("Sunday", "Monday", "Wednesday", "Thursday", "Friday", "Saturday")
-    return "Dein Tag ist: " + $days[$day]
-}
-
-DayofWeek($eingabe)
-
 Want to get in touch? [Contact me here](/contact).
 
 This site was generated with a custom-built [static site generator](https://www.boot.dev/courses/build-static-site-generator-python) from the course on [Boot.dev](https://www.boot.dev).
